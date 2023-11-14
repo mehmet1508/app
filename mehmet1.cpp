@@ -3,6 +3,6 @@ using namespace  std;
 int main(){
 
 
-cout<<"tştppktgkthphk";
+cout<<" BAKALIM DEGISECEK MI ONLY AN ATTEMPT";
 
 }
