@@ -1,10 +1,118 @@
+#include <stdio.h>
+
+int main() {
+    int sayi, yeniSayi, ilkBasamak, sonBasamak;
+    int basamakSayisi;
+
+    printf("Bir sayi girin\n");  
+    scanf_s("%d", &sayi); 
+ 
+    sonBasamak = sayi % 10;
+
+    ilkBasamak = sayi;
+    basamakSayisi = 1;
+
+    while (ilkBasamak >= 10) {
+        ilkBasamak /= 10;
+
+          basamakSayisi *= 10; 
+          
+    }
+
+    yeniSayi = sonBasamak * basamakSayisi + (sayi % basamakSayisi) - sonBasamak + ilkBasamak;
+
+    printf("yeni sayi %d\n", yeniSayi);
+
+    return 0;
+}
+
+
+
+
 #include <iostream>
+#include <iomanip>
+using namespace std;
+
+/*struct bacteriaCulture {
+
+	float type1;
+	float type2;
+};
+
+int main()
+{
+
+	int i;
+
+	bacteriaCulture result;
+
+	cout << "HOUR    TYPE1    TYPE2\n";
+	cout << "-----------------------------;\n";
+
+	result.type1 = 100;
+	result.type2 = 120;
+
+
+
+	for (i = 0; i < 24; i++) {
+
+
+
+		cout << fixed << setprecision(3) << i << "\t" << result.type1 << "\t" << result.type2 << endl;
+		result.type1 = result.type1 * 1.5;
+
+		result.type2 = result.type2 * 2.1;
+
+
+
+	}
+
+}*/
+
+struct bacteriaCulture {
+
+	float type1;
+	float type2;
+
+};
+
+int main() {
+
+	int i,a,b;
+
+	bacteriaCulture bacteria = { a,b };
+
+	cout << "HOUR\t TYPE1\t TYPE2\n" << endl;
+	cout << "---------------------------" << endl;
+
+	for (i = 0; i < 24; i++) {
+
+		cout << i << "\t" << fixed << setprecision(2) << setw(5) << bacteria.type1<< "\t" << right << setw(5) << bacteria.type2 << endl;
+		bacteria.type1 *= 1.5;
+		bacteria.type2 *= 2.1;
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+
 
 int main() {
     // Print the body of the plane
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 10; ++j) {
-            std::cout << "*";
+            td::cout << "*";
         }
         std::cout << std::endl;
     }
