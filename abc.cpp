@@ -1,3 +1,6 @@
+#yaaaaaaaaaaaaaaaaaaaa kardesssssssssssssss xd
+
+
 #include <stdio.h>
 
 int main() {
