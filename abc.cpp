@@ -1,5 +1,5 @@
 #yaaaaaaaaaaaaaaaaaaaa kardesssssssssssssss xd
-
+#bak bu mesaj serdaldan
 
 #include <stdio.h>
 
